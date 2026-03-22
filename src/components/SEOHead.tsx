@@ -3,10 +3,14 @@ import { siteConfig } from "@/lib/config";
 
 interface SEOHeadProps {
   page: keyof typeof siteConfig.seo;
+  overrideTitle?: string;
+  overrideDescription?: string;
 }
 
-export default function SEOHead({ page }: SEOHeadProps) {
+export default function SEOHead({ page, overrideTitle, overrideDescription }: SEOHeadProps) {
   const seo = siteConfig.seo[page];
+  const title = overrideTitle || seo?.title;
+  const description = overrideDescription || seo?.description;
 
   useEffect(() => {
     if (seo?.title) {
