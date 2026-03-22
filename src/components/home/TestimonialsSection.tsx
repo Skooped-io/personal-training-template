@@ -1,23 +1,6 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Quote } from "lucide-react";
-
-const testimonials = [
-  {
-    quote: "Marcus didn't just change my body — he rewired how I think about discipline. Down 38 lbs and stronger than I've ever been.",
-    name: "Rachel Nguyen",
-    detail: "Lost 38 lbs in 14 weeks",
-  },
-  {
-    quote: "I'd tried everything before. Fad diets, random gym plans. Marcus gave me structure, accountability, and real results for the first time.",
-    name: "Tom Alvarez",
-    detail: "Gained 15 lbs of muscle",
-  },
-  {
-    quote: "The small group sessions are addictive. The energy is unreal and Marcus pushes you just the right amount. Best investment in myself.",
-    name: "Priya Kapoor",
-    detail: "Small Group client, 8 months",
-  },
-];
+import { siteConfig } from "@/lib/config";
 
 export default function TestimonialsSection() {
   const { ref, isVisible } = useScrollReveal();
@@ -33,7 +16,7 @@ export default function TestimonialsSection() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((t, i) => (
+          {siteConfig.testimonials.map((t, i) => (
             <div
               key={t.name}
               className={`bg-card rounded-lg p-8 border border-border relative ${isVisible ? "animate-fade-up" : "opacity-0"}`}

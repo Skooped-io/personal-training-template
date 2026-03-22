@@ -1,10 +1,5 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
-
-const stats = [
-  { value: "500+", label: "Transformations" },
-  { value: "12", label: "Years Experience" },
-  { value: "NASM", label: "Certified Trainer" },
-];
+import { siteConfig } from "@/lib/config";
 
 export default function StatsBar() {
   const { ref, isVisible } = useScrollReveal(0.3);
@@ -13,7 +8,7 @@ export default function StatsBar() {
     <section ref={ref} className="bg-secondary py-12 relative noise-overlay">
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          {stats.map((stat, i) => (
+          {siteConfig.stats.map((stat, i) => (
             <div
               key={stat.label}
               className={`${isVisible ? "animate-count-up" : "opacity-0"}`}

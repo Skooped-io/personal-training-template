@@ -8,10 +8,13 @@ import AboutTeaser from "@/components/home/AboutTeaser";
 import PhilosophySection from "@/components/home/PhilosophySection";
 import TestimonialsSection from "@/components/home/TestimonialsSection";
 import CTASection from "@/components/home/CTASection";
+import SEOHead, { SchemaOrg } from "@/components/SEOHead";
 
 const Index = () => {
   return (
     <>
+      <SEOHead page="home" />
+      <SchemaOrg />
       <Navbar />
       <main>
         <HeroSection />

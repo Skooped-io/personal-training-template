@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { siteConfig } from "@/lib/config";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -20,7 +21,7 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16">
         <Link to="/" className="font-heading text-3xl text-primary tracking-wide">
-          MARCUS COLE
+          {siteConfig.brandName}
         </Link>
 
         {/* Desktop */}

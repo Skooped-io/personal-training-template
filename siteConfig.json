@@ -1,0 +1,235 @@
+{
+  "businessName": "Marcus Cole",
+  "brandName": "MARCUS COLE",
+  "phone": "(512) 555-0147",
+  "email": "marcus@coletraining.com",
+  "address": {
+    "street": "4200 S Lamar Blvd",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78745",
+    "venue": "Iron District Gym",
+    "full": "Iron District Gym, 4200 S Lamar Blvd, Austin, TX 78745"
+  },
+  "serviceArea": "Austin, TX",
+  "industry": "Personal Training",
+  "yearEstablished": "2014",
+  "licenseNumber": "",
+  "hours": "Mon–Fri 5:30am–8pm · Sat 7am–2pm · Sun Closed",
+  "about": "I'm Marcus Cole — a NASM-certified personal trainer with over 12 years of experience transforming bodies and mindsets. I started my journey at 19, overweight and unmotivated. Training saved my life, and now I dedicate mine to changing others'.",
+  "aboutExtended": "Specializing in body recomposition, strength training, and sustainable nutrition. I don't do cookie-cutter. Every client gets a program built from scratch.",
+  "aboutStory": [
+    "At 19, I was 260 lbs with no direction. A friend dragged me to a gym. That single hour changed the trajectory of my life. Within a year, I'd lost 80 lbs. Within two, I'd earned my first certification.",
+    "I've spent the last 12 years refining my craft — studying biomechanics, nutrition science, and behavioral psychology. I don't just train bodies. I build mindsets that last.",
+    "Based in Austin, TX, I work out of Iron District Gym — a no-frills warehouse space where the work speaks for itself. If you're looking for fancy smoothie bars, this isn't the place. If you're looking for results, welcome home."
+  ],
+  "certifications": [
+    "NASM Certified Personal Trainer",
+    "ACE Health Coach",
+    "Precision Nutrition Level 2",
+    "CrossFit Level 1",
+    "CPR/AED Certified"
+  ],
+  "stats": [
+    { "value": "500+", "label": "Transformations" },
+    { "value": "12", "label": "Years Experience" },
+    { "value": "NASM", "label": "Certified Trainer" }
+  ],
+  "services": [
+    "1-on-1 Personal Training",
+    "Small Group Training",
+    "Online Coaching",
+    "Custom Meal Plans"
+  ],
+  "programs": [
+    {
+      "icon": "Dumbbell",
+      "title": "1-on-1 Training",
+      "shortDesc": "Fully customized programs with hands-on coaching. Every rep, every set, every meal — built for you.",
+      "fullTitle": "1-ON-1 PERSONAL TRAINING",
+      "who": "For anyone serious about transformation — beginners to advanced athletes.",
+      "includes": [
+        "Initial body composition assessment",
+        "Custom training program (updated monthly)",
+        "Nutrition guidance & macro targets",
+        "Weekly accountability check-ins",
+        "Form correction & injury prevention"
+      ],
+      "sessions": "60 min sessions, 3-5x/week recommended",
+      "cta": "Apply for 1-on-1"
+    },
+    {
+      "icon": "Users",
+      "title": "Small Group",
+      "shortDesc": "High-energy sessions with 4-6 people max. Community push with personal attention.",
+      "fullTitle": "SMALL GROUP TRAINING",
+      "who": "For those who thrive on community energy with a cap of 6 per session.",
+      "includes": [
+        "Structured programming with variety",
+        "Partner & team-based workouts",
+        "Technique coaching in every session",
+        "Flexible schedule with multiple time slots",
+        "Monthly progress tracking"
+      ],
+      "sessions": "50 min sessions, schedule varies",
+      "cta": "Join a Group"
+    },
+    {
+      "icon": "Wifi",
+      "title": "Online Coaching",
+      "shortDesc": "Train anywhere with app-based programming, weekly check-ins, and macro tracking.",
+      "fullTitle": "ONLINE COACHING",
+      "who": "For self-starters who want expert programming without geographic limits.",
+      "includes": [
+        "App-based custom program",
+        "Video form reviews",
+        "Bi-weekly video check-ins",
+        "Macro tracking & nutrition plan",
+        "24/7 messaging support"
+      ],
+      "sessions": "Train on your schedule, check-ins bi-weekly",
+      "cta": "Start Online Coaching"
+    },
+    {
+      "icon": "UtensilsCrossed",
+      "title": "Custom Meal Plans",
+      "shortDesc": "Nutrition blueprints tailored to your goals, lifestyle, and food preferences.",
+      "fullTitle": "CUSTOM MEAL PLANS",
+      "who": "For anyone who needs nutrition dialed in — standalone or as an add-on.",
+      "includes": [
+        "Calorie & macro blueprint",
+        "Meal templates & recipes",
+        "Grocery list generator",
+        "Flexible dieting approach",
+        "Monthly plan updates"
+      ],
+      "sessions": "Updated monthly based on progress",
+      "cta": "Get Your Plan"
+    }
+  ],
+  "philosophy": [
+    {
+      "icon": "Brain",
+      "title": "TRAIN SMART",
+      "desc": "Progressive overload, periodization, and form-first coaching. No ego lifting, no wasted sets."
+    },
+    {
+      "icon": "Apple",
+      "title": "EAT RIGHT",
+      "desc": "Macro-based nutrition that fits your life. No crash diets — sustainable fuel for lasting results."
+    },
+    {
+      "icon": "Repeat",
+      "title": "STAY CONSISTENT",
+      "desc": "The best program is the one you stick to. We build habits that outlast motivation."
+    }
+  ],
+  "trainingStyle": [
+    {
+      "icon": "Dumbbell",
+      "title": "Strength First",
+      "desc": "Every program is built on progressive overload and compound movements. We build a foundation before we sculpt."
+    },
+    {
+      "icon": "Heart",
+      "title": "Mind-Body",
+      "desc": "Training isn't just physical. We work on discipline, self-image, and mental resilience alongside every lift."
+    },
+    {
+      "icon": "Award",
+      "title": "Results-Driven",
+      "desc": "Biweekly assessments, body composition tracking, and program adjustments. Data, not guesswork."
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Marcus didn't just change my body — he rewired how I think about discipline. Down 38 lbs and stronger than I've ever been.",
+      "name": "Rachel Nguyen",
+      "detail": "Lost 38 lbs in 14 weeks"
+    },
+    {
+      "quote": "I'd tried everything before. Fad diets, random gym plans. Marcus gave me structure, accountability, and real results for the first time.",
+      "name": "Tom Alvarez",
+      "detail": "Gained 15 lbs of muscle"
+    },
+    {
+      "quote": "The small group sessions are addictive. The energy is unreal and Marcus pushes you just the right amount. Best investment in myself.",
+      "name": "Priya Kapoor",
+      "detail": "Small Group client, 8 months"
+    }
+  ],
+  "transformations": [
+    { "name": "Jake Martinez", "program": "1-on-1 Training", "time": "16 weeks", "result": "Lost 42 lbs, gained visible muscle definition" },
+    { "name": "Sarah Chen", "program": "Online Coaching", "time": "12 weeks", "result": "Dropped 3 dress sizes while building strength" },
+    { "name": "Devon Williams", "program": "Small Group", "time": "20 weeks", "result": "Ran first marathon after losing 55 lbs" }
+  ],
+  "results": [
+    { "name": "Jake Martinez", "category": "Weight Loss", "time": "16 weeks", "program": "1-on-1", "result": "Lost 42 lbs, gained visible muscle definition. Went from sedentary to 5x/week training." },
+    { "name": "Sarah Chen", "category": "Weight Loss", "time": "12 weeks", "program": "Online Coaching", "result": "Dropped 3 dress sizes while building strength. Now deadlifts 185 lbs." },
+    { "name": "Devon Williams", "category": "Athletic Performance", "time": "20 weeks", "program": "Small Group", "result": "Ran first marathon after losing 55 lbs. Completely changed his relationship with fitness." },
+    { "name": "Maria Gonzalez", "category": "Muscle Building", "time": "24 weeks", "program": "1-on-1", "result": "Gained 12 lbs of lean muscle. Competed in her first figure competition and placed top 5." },
+    { "name": "Alex Kim", "category": "General Fitness", "time": "10 weeks", "program": "Online Coaching", "result": "Improved energy, sleep quality, and stress management. Lost 15 lbs in the process." },
+    { "name": "Tyler Brooks", "category": "Athletic Performance", "time": "16 weeks", "program": "1-on-1", "result": "Improved 40-yard dash by 0.3s and vertical leap by 4 inches for college football prep." }
+  ],
+  "resultCategories": ["All", "Weight Loss", "Muscle Building", "Athletic Performance", "General Fitness"],
+  "groupSchedule": [
+    { "day": "Monday", "time": "6:00 AM", "type": "Strength & Conditioning" },
+    { "day": "Monday", "time": "5:30 PM", "type": "HIIT Circuit" },
+    { "day": "Tuesday", "time": "6:00 AM", "type": "Upper Body Focus" },
+    { "day": "Wednesday", "time": "6:00 AM", "type": "Lower Body Focus" },
+    { "day": "Wednesday", "time": "5:30 PM", "type": "Full Body Burn" },
+    { "day": "Thursday", "time": "6:00 AM", "type": "Strength & Conditioning" },
+    { "day": "Friday", "time": "6:00 AM", "type": "HIIT Circuit" },
+    { "day": "Saturday", "time": "8:00 AM", "type": "Weekend Warrior" }
+  ],
+  "fitnessGoals": ["Weight Loss", "Muscle Building", "General Fitness", "Sport-Specific", "Rehabilitation"],
+  "activityLevels": ["Sedentary", "Lightly Active", "Moderately Active", "Very Active"],
+  "preferredTimes": ["Early Morning (6-8am)", "Morning (8-11am)", "Afternoon (12-4pm)", "Evening (5-8pm)"],
+  "socialLinks": {
+    "instagram": "#",
+    "youtube": "#"
+  },
+  "hero": {
+    "headline": "YOUR BODY.",
+    "headlineAccent": "YOUR RULES.",
+    "subtext": "Personalized training programs designed to push your limits and unlock the strongest version of you.",
+    "ctaPrimary": "Book Your First Session — Free",
+    "ctaSecondary": "View Programs"
+  },
+  "cta": {
+    "headline": "YOUR FIRST SESSION\nIS FREE. NO EXCUSES.",
+    "subtext": "Stop thinking about it. Book your free assessment and let's build something together.",
+    "button": "Book Now"
+  },
+  "seo": {
+    "home": {
+      "title": "Marcus Cole | Personal Trainer in Austin, TX",
+      "description": "Certified personal trainer in Austin. Custom training programs, nutrition coaching & real results. Free first session. Book now.",
+      "h1": "YOUR BODY. YOUR RULES."
+    },
+    "about": {
+      "title": "About Marcus Cole | Personal Trainer in Austin, TX",
+      "description": "Meet Marcus Cole — NASM-certified personal trainer with 12+ years experience in Austin, TX. Body recomposition, strength training & sustainable nutrition."
+    },
+    "programs": {
+      "title": "Training Programs | Marcus Cole Personal Training",
+      "description": "1-on-1 training, small group sessions, online coaching & custom meal plans. Find the program that fits your goals."
+    },
+    "results": {
+      "title": "Real Transformations | Marcus Cole Personal Training",
+      "description": "See real client transformations — weight loss, muscle building & athletic performance results from Marcus Cole Training."
+    },
+    "schedule": {
+      "title": "Book a Session | Marcus Cole Personal Training",
+      "description": "Book your free assessment with Marcus Cole. View group class schedule and start your transformation today."
+    },
+    "contact": {
+      "title": "Contact Marcus Cole | Personal Trainer in Austin, TX",
+      "description": "Get in touch with Marcus Cole Training. Located at Iron District Gym, Austin, TX. Questions answered within 24 hours."
+    }
+  },
+  "branding": {
+    "primaryColor": "hsl(160, 81%, 40%)",
+    "accentColor": "hsl(25, 95%, 53%)"
+  }
+}
