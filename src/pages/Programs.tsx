@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Dumbbell, Users, Wifi, UtensilsCrossed, Check } from "lucide-react";
-import { siteConfig } from "@/lib/config";
+import { Dumbbell, Users, Wifi, UtensilsCrossed, Check, ArrowRight } from "lucide-react";
+import { siteConfig, slugify } from "@/lib/config";
 
 const iconMap: Record<string, any> = { Dumbbell, Users, Wifi, UtensilsCrossed };
 
