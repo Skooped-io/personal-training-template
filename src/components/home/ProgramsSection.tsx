@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Dumbbell, Users, Wifi, UtensilsCrossed } from "lucide-react";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, slugify } from "@/lib/config";
 
 const iconMap: Record<string, any> = { Dumbbell, Users, Wifi, UtensilsCrossed };
 
