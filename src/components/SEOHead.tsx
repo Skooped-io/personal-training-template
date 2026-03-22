@@ -13,22 +13,13 @@ export default function SEOHead({ page, overrideTitle, overrideDescription }: SE
   const description = overrideDescription || seo?.description;
 
   useEffect(() => {
-    if (seo?.title) {
-      document.title = seo.title;
-    }
+    if (title) document.title = title;
     const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && seo?.description) {
-      metaDesc.setAttribute("content", seo.description);
-    }
-
+    if (metaDesc && description) metaDesc.setAttribute("content", description);
     const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle && seo?.title) {
-      ogTitle.setAttribute("content", seo.title);
-    }
+    if (ogTitle && title) ogTitle.setAttribute("content", title);
     const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc && seo?.description) {
-      ogDesc.setAttribute("content", seo.description);
-    }
+    if (ogDesc && description) ogDesc.setAttribute("content", description);
   }, [seo]);
 
   return null;

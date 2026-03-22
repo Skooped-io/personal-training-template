@@ -58,9 +58,16 @@ const Programs = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link to="/schedule">
-                      <Button variant="hero" size="lg">{p.cta}</Button>
-                    </Link>
+                    <div className="flex flex-wrap gap-3">
+                      <Link to="/schedule">
+                        <Button variant="hero" size="lg">{p.cta}</Button>
+                      </Link>
+                      <Link to={`/services/${slugify(p.title)}`}>
+                        <Button variant="outline" size="lg" className="gap-2">
+                          Learn More <ArrowRight size={16} />
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );
