@@ -2,6 +2,7 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import trainerImg from "@/assets/trainer-portrait.jpg";
+import { siteConfig, getImage } from "@/lib/config";
 
 export default function AboutTeaser() {
   const { ref, isVisible } = useScrollReveal();
@@ -14,12 +15,12 @@ export default function AboutTeaser() {
           <div className={`${isVisible ? "animate-slide-left" : "opacity-0"}`}>
             <div className="relative">
               <img
-                src={trainerImg}
-                alt="Marcus Cole, personal trainer"
+                src={getImage(null, 'about', trainerImg)}
+                alt={`${siteConfig.businessName}, personal trainer`}
                 className="rounded-lg w-full max-w-md mx-auto shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 rounded-lg gradient-green flex items-center justify-center">
-                <span className="font-heading text-3xl text-primary-foreground">12+</span>
+                <span className="font-heading text-3xl text-primary-foreground">{siteConfig.stats[1]?.value}+</span>
               </div>
             </div>
           </div>
@@ -30,10 +31,10 @@ export default function AboutTeaser() {
               MEET YOUR <span className="text-primary">TRAINER</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I'm Marcus Cole — a NASM-certified personal trainer with over 12 years of experience transforming bodies and mindsets. I started my journey at 19, overweight and unmotivated. Training saved my life, and now I dedicate mine to changing others'.
+              {siteConfig.about}
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Specializing in body recomposition, strength training, and sustainable nutrition. I don't do cookie-cutter. Every client gets a program built from scratch.
+              {siteConfig.aboutExtended}
             </p>
             <Link to="/about">
               <Button variant="outline" size="lg">

@@ -1,11 +1,6 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Link } from "react-router-dom";
-
-const transformations = [
-  { name: "Jake Martinez", program: "1-on-1 Training", time: "16 weeks", result: "Lost 42 lbs, gained visible muscle definition" },
-  { name: "Sarah Chen", program: "Online Coaching", time: "12 weeks", result: "Dropped 3 dress sizes while building strength" },
-  { name: "Devon Williams", program: "Small Group", time: "20 weeks", result: "Ran first marathon after losing 55 lbs" },
-];
+import { siteConfig } from "@/lib/config";
 
 export default function TransformationsSection() {
   const { ref, isVisible } = useScrollReveal();
@@ -24,7 +19,7 @@ export default function TransformationsSection() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {transformations.map((t, i) => (
+          {siteConfig.transformations.map((t, i) => (
             <div
               key={t.name}
               className={`rounded-lg overflow-hidden bg-secondary ${isVisible ? "animate-fade-up" : "opacity-0"}`}

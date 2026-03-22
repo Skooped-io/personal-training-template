@@ -4,22 +4,12 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-
-const filters = ["All", "Weight Loss", "Muscle Building", "Athletic Performance", "General Fitness"];
-
-const results = [
-  { name: "Jake Martinez", category: "Weight Loss", time: "16 weeks", program: "1-on-1", result: "Lost 42 lbs, gained visible muscle definition. Went from sedentary to 5x/week training." },
-  { name: "Sarah Chen", category: "Weight Loss", time: "12 weeks", program: "Online Coaching", result: "Dropped 3 dress sizes while building strength. Now deadlifts 185 lbs." },
-  { name: "Devon Williams", category: "Athletic Performance", time: "20 weeks", program: "Small Group", result: "Ran first marathon after losing 55 lbs. Completely changed his relationship with fitness." },
-  { name: "Maria Gonzalez", category: "Muscle Building", time: "24 weeks", program: "1-on-1", result: "Gained 12 lbs of lean muscle. Competed in her first figure competition and placed top 5." },
-  { name: "Alex Kim", category: "General Fitness", time: "10 weeks", program: "Online Coaching", result: "Improved energy, sleep quality, and stress management. Lost 15 lbs in the process." },
-  { name: "Tyler Brooks", category: "Athletic Performance", time: "16 weeks", program: "1-on-1", result: "Improved 40-yard dash by 0.3s and vertical leap by 4 inches for college football prep." },
-];
+import { siteConfig } from "@/lib/config";
 
 const Results = () => {
   const [active, setActive] = useState("All");
   const { ref, isVisible } = useScrollReveal();
-  const filtered = active === "All" ? results : results.filter((r) => r.category === active);
+  const filtered = active === "All" ? siteConfig.results : siteConfig.results.filter((r) => r.category === active);
 
   return (
     <>
@@ -40,7 +30,7 @@ const Results = () => {
           <div className="container">
             {/* Filters */}
             <div className={`flex flex-wrap gap-3 justify-center mb-16 ${isVisible ? "animate-fade-up" : "opacity-0"}`}>
-              {filters.map((f) => (
+              {siteConfig.resultCategories.map((f) => (
                 <button
                   key={f}
                   onClick={() => setActive(f)}

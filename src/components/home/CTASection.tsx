@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { siteConfig } from "@/lib/config";
 
 export default function CTASection() {
   const { ref, isVisible } = useScrollReveal();
@@ -16,20 +17,20 @@ export default function CTASection() {
       <div className="container relative z-10 text-center">
         <h2
           className={`text-5xl md:text-7xl font-heading text-accent-foreground mb-6 ${isVisible ? "animate-fade-up" : "opacity-0"}`}
-          style={{ lineHeight: "0.95" }}
+          style={{ lineHeight: "0.95", whiteSpace: "pre-line" }}
         >
-          YOUR FIRST SESSION<br />IS FREE. NO EXCUSES.
+          {siteConfig.cta.headline}
         </h2>
         <p
           className={`text-accent-foreground/80 text-lg mb-10 max-w-md mx-auto ${isVisible ? "animate-fade-up" : "opacity-0"}`}
           style={{ animationDelay: "150ms" }}
         >
-          Stop thinking about it. Book your free assessment and let's build something together.
+          {siteConfig.cta.subtext}
         </p>
         <div className={`${isVisible ? "animate-fade-up" : "opacity-0"}`} style={{ animationDelay: "300ms" }}>
           <Link to="/schedule">
             <Button variant="hero" size="xl" className="bg-secondary text-foreground hover:bg-secondary/90 shadow-xl shadow-black/20">
-              Book Now <ArrowRight size={20} />
+              {siteConfig.cta.button} <ArrowRight size={20} />
             </Button>
           </Link>
         </div>

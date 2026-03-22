@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImg from "@/assets/hero-gym.jpg";
+import { siteConfig, getImage } from "@/lib/config";
 
 export default function HeroSection() {
   return (
@@ -9,8 +10,8 @@ export default function HeroSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={heroImg}
-          alt="Dark gym interior with dramatic lighting"
+          src={getImage(null, 'hero', heroImg)}
+          alt={`${siteConfig.businessName} - ${siteConfig.industry}`}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-background/70" />
@@ -28,25 +29,25 @@ export default function HeroSection() {
             className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-heading leading-[0.9] text-foreground mb-6 opacity-0 animate-fade-up"
             style={{ textWrap: "balance" }}
           >
-            YOUR BODY.<br />
-            <span className="text-primary">YOUR RULES.</span>
+            {siteConfig.hero.headline}<br />
+            <span className="text-primary">{siteConfig.hero.headlineAccent}</span>
           </h1>
           <p
             className="text-lg md:text-xl text-muted-foreground font-body font-light max-w-lg mb-10 opacity-0 animate-fade-up"
             style={{ animationDelay: "150ms", textWrap: "pretty" }}
           >
-            Personalized training programs designed to push your limits and unlock the strongest version of you.
+            {siteConfig.hero.subtext}
           </p>
           <div className="flex flex-wrap gap-4 opacity-0 animate-fade-up" style={{ animationDelay: "300ms" }}>
             <Link to="/schedule">
               <Button variant="hero" size="xl">
-                Book Your First Session — Free
+                {siteConfig.hero.ctaPrimary}
                 <ArrowRight size={20} />
               </Button>
             </Link>
             <Link to="/programs">
               <Button variant="outline" size="xl">
-                View Programs
+                {siteConfig.hero.ctaSecondary}
               </Button>
             </Link>
           </div>

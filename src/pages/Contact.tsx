@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Instagram, Youtube, Mail, MapPin, Phone } from "lucide-react";
+import { siteConfig } from "@/lib/config";
 
 const Contact = () => {
   return (
@@ -52,7 +53,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading text-lg" style={{ lineHeight: "1.1" }}>LOCATION</h3>
-                      <p className="text-muted-foreground text-sm">Iron District Gym<br />4200 S Lamar Blvd<br />Austin, TX 78745</p>
+                      <p className="text-muted-foreground text-sm">{siteConfig.address.venue}<br />{siteConfig.address.street}<br />{siteConfig.address.city}, {siteConfig.address.state} {siteConfig.address.zip}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -61,7 +62,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading text-lg" style={{ lineHeight: "1.1" }}>PHONE</h3>
-                      <p className="text-muted-foreground text-sm">(512) 555-0147</p>
+                      <p className="text-muted-foreground text-sm">{siteConfig.phone}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -70,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-heading text-lg" style={{ lineHeight: "1.1" }}>EMAIL</h3>
-                      <p className="text-muted-foreground text-sm">marcus@coletraining.com</p>
+                      <p className="text-muted-foreground text-sm">{siteConfig.email}</p>
                     </div>
                   </div>
                 </div>
@@ -78,10 +79,10 @@ const Contact = () => {
                 <div className="mt-12">
                   <h3 className="font-heading text-lg mb-4" style={{ lineHeight: "1.1" }}>FOLLOW THE JOURNEY</h3>
                   <div className="flex gap-4">
-                    <a href="#" className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all" aria-label="Instagram">
+                    <a href={siteConfig.socialLinks.instagram} className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all" aria-label="Instagram">
                       <Instagram size={20} />
                     </a>
-                    <a href="#" className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all" aria-label="YouTube">
+                    <a href={siteConfig.socialLinks.youtube} className="w-12 h-12 rounded-lg bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all" aria-label="YouTube">
                       <Youtube size={20} />
                     </a>
                   </div>
