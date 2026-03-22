@@ -18,6 +18,7 @@ const Schedule = () => {
 
   return (
     <>
+      <SEOHead page="schedule" />
       <Navbar />
       <main className="pt-16">
         <section className="py-24 bg-secondary noise-overlay">

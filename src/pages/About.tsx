@@ -14,6 +14,7 @@ const About = () => {
 
   return (
     <>
+      <SEOHead page="about" />
       <Navbar />
       <main className="pt-16">
         {/* Hero */}

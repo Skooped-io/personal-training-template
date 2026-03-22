@@ -8,6 +8,7 @@ import { siteConfig } from "@/lib/config";
 const Contact = () => {
   return (
     <>
+      <SEOHead page="contact" />
       <Navbar />
       <main className="pt-16">
         <section className="py-24 bg-secondary noise-overlay">
