@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Dumbbell, Users, Wifi, UtensilsCrossed } from "lucide-react";
-import { siteConfig } from "@/lib/config";
+import { siteConfig, slugify } from "@/lib/config";
 
 const iconMap: Record<string, any> = { Dumbbell, Users, Wifi, UtensilsCrossed };
 
@@ -27,7 +27,7 @@ export default function ProgramsSection() {
             return (
               <Link
                 key={p.title}
-                to="/programs"
+                to={`/services/${slugify(p.title)}`}
                 className={`group relative bg-card rounded-lg p-8 border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 ${isVisible ? "animate-fade-up" : "opacity-0"}`}
                 style={{ animationDelay: `${200 + i * 80}ms` }}
               >

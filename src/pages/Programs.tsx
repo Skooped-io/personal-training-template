@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Dumbbell, Users, Wifi, UtensilsCrossed, Check } from "lucide-react";
-import { siteConfig } from "@/lib/config";
+import { Dumbbell, Users, Wifi, UtensilsCrossed, Check, ArrowRight } from "lucide-react";
+import { siteConfig, slugify } from "@/lib/config";
 
 const iconMap: Record<string, any> = { Dumbbell, Users, Wifi, UtensilsCrossed };
 
@@ -58,9 +58,16 @@ const Programs = () => {
                         </li>
                       ))}
                     </ul>
-                    <Link to="/schedule">
-                      <Button variant="hero" size="lg">{p.cta}</Button>
-                    </Link>
+                    <div className="flex flex-wrap gap-3">
+                      <Link to="/schedule">
+                        <Button variant="hero" size="lg">{p.cta}</Button>
+                      </Link>
+                      <Link to={`/services/${slugify(p.title)}`}>
+                        <Button variant="outline" size="lg" className="gap-2">
+                          Learn More <ArrowRight size={16} />
+                        </Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );
