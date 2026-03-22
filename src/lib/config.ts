@@ -23,3 +23,11 @@ export function getImage(dynamicConfig: any, slot: string, fallback: string): st
 export function getPrimaryColor(dynamicConfig: any): string {
   return dynamicConfig?.branding?.primaryColor || staticConfig.branding?.primaryColor || 'hsl(160, 81%, 40%)';
 }
+
+export function slugify(text: string): string {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+export function getProgramBySlug(slug: string) {
+  return siteConfig.programs.find((p) => slugify(p.title) === slug);
+}
