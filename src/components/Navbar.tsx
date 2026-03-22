@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -14,7 +14,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
-  const location = { pathname: window.location.hash.replace('#', '') || '/' };
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
